@@ -7,10 +7,14 @@
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5"
   },
+  "devDependencies": {
+    "@pact-foundation/pact-web": "7.0.1",
+    "@pact-foundation/pact-node": "6.20.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --runInBand --setupFiles ./pact/setup.js --setupTestFrameworkScriptFile ./pact/wrapper.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
