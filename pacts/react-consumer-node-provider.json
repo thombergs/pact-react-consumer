@@ -1,0 +1,31 @@
+{
+  "consumer": {
+    "name": "react-consumer"
+  },
+  "provider": {
+    "name": "node-provider"
+  },
+  "interactions": [
+    {
+      "description": "Get ",
+      "request": {
+        "method": "GET",
+        "path": "/api/auth",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
